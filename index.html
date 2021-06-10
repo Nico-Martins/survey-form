@@ -5,43 +5,45 @@
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1 id="title"> </h1>
-        <p id="description"></p>
+        <h1 id="title">Form</h1>
+        <p id="description">Description</p>
         <form id="survey-form">
-            <label for="name">
-                <input type="text" id="name" placeholder="Enter your name...">
+            <label id="name-label" for="name">Name:
+                <input type="text" id="name" placeholder="Enter your name..." required>
             </label>
-            <label for="email">
-                <input type="email" id="email" placeholder="Enter your email adress...">
+            <label id="email-label" for="email">Email:
+                <input type="email" id="email" placeholder="Enter your email adress..." required>
             </label>
-            <label for="number">
+            <label id="number-label" for="number">Number from 0 to 150:
                 <input type="number" id="number" min="0" max="150" placeholder="Enter your age...">
             </label>
             <label for="dropdown"> Select:
                 <select id="dropdown">
-                    <option value="Jorge">Jorge</option>
+                    <option value="option1">option1</option>
+                    <option value="option1">option2</option>
+                    <option value="option1">option3</option>
                 </select>
             </label>
             <fieldset>
                 <label for="option1">
-                    <input type="radio" name="radiofield" id="option1">
+                    <input type="radio" name="radiofield" id="option1" value="option-name1">
                 </label>
                 <label for="option2">
-                    <input type="radio" name="radiofield" id="option2">
+                    <input type="radio" name="radiofield" id="option2" value="option-name2">
                 </label>
                 <label for="option3">
-                    <input type="radio" name="radiofield" id="option3">
+                    <input type="radio" name="radiofield" id="option3" value="option-name3">
                 </label>
             </fieldset>
             <fieldset>
                 <label for="option1">
-                    <input type="checkbox" name="radiofield2" id="option1" value="option-name">
+                    <input type="checkbox" name="radiofield2" id="option1" value="option-name1">
                 </label>
                 <label for="option2">
-                    <input type="checkbox" name="radiofield2" id="option2" value="option-name">
+                    <input type="checkbox" name="radiofield2" id="option2" value="option-name2">
                 </label>
                 <label for="option3">
-                    <input type="checkbox" name="radiofield2" id="option3" value="option-name">
+                    <input type="checkbox" name="radiofield2" id="option3" value="option-name3">
                 </label>
             </fieldset>
             <label for="text"><textarea name="text1" id="text1" cols="30" rows="10"></textarea></label>
