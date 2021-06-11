@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(rgba(25, 25, 75, 0.45), rgba(25, 25, 75, 0.45   )),
+    url('trees-overhead.jpg');
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+#title {
+    font-size: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+}
+#description {
+    text-align: center;
+    padding: 2% 25% 2% 25%;
+    font-size: 20px;
+}
+#form-div {
+    background-color: rgba(8, 8, 80, 0.75);
+    border-radius: 8px;
+    margin: 0% 25% 5% 25%;
+}
+#survey-form {
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: grid;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+    "name"
+    "email"
+    "age"
+    "radio"
+    "select"
+    "checkboxes"
+    "text-block"
+    "submit";
+}
+#name-label, #email-label, #number-label, #radio-fieldset, #select, #checkbox-fieldset, #input-text, #submit {
+    padding: 2%;
+    line-height: 2em;
+    text-shadow: 0px 0px 5px rgba(4, 3, 40, 0.4);
+} 
+#name, #email, #number, #dropdown, #text {
+    padding: 0.8%;
+    border-radius: 5px;
+    border: none;
+}
+#name-label {
+    grid-area: name;
+    display: grid;
+}
+#email-label {
+    grid-area: email;
+    display: grid;
+}
+#number-label {
+    grid-area: age;
+    display: grid;  
+}
+#radio-fieldset {
+    grid-area: radio;
+    display: grid;  
+}
+#select {
+    grid-area: select;
+    display: grid;  
+}
+#checkbox-fieldset {
+    grid-area: checkboxes;
+    display: grid;  
+}
+#input-text {
+    grid-area: text-block;
+    display: grid;  
+}
+#submit {
+    font-size: 20px;
+    color: white;
+    grid-area: submit;
+    margin: 2% 30% 0% 30%;
+    background-color: #37af65;
+    box-shadow: 0px 0px 5px rgba(4, 3, 40, 0.4);
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+#submit:hover {
+    border: 2px solid #37af65;
+    background-color: transparent;
+}

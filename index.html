@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        |<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
         <link href="reset.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1 id="title">Form</h1>
-        <p id="description">Description</p>
-        <form id="survey-form">
-            <label id="name-label" for="name">Name:
-                <input type="text" id="name" placeholder="Enter your name..." required>
-            </label>
-            <label id="email-label" for="email">Email:
-                <input type="email" id="email" placeholder="Enter your email adress..." required>
-            </label>
-            <label id="number-label" for="number">Number from 0 to 150:
-                <input type="number" id="number" min="0" max="150" placeholder="Enter your age...">
-            </label>
-            <label for="dropdown"> Select:
-                <select id="dropdown">
-                    <option value="option1">option1</option>
-                    <option value="option1">option2</option>
-                    <option value="option1">option3</option>
-                </select>
-            </label>
-            <fieldset>
-                <label for="option1">
-                    <input type="radio" name="radiofield" id="option1" value="option-name1">
+        <h1 id="title">Save The Rainforests</h1>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque sodales luctus lobortis. Duis ipsum nibh, tristique nec porta eget, posuere a magna. 
+            Nullam orci ante, euismod vel sapien vel, eleifend hendrerit ante. 
+            Pellentesque consequat purus a dapibus tristique. Duis accumsan, mi sed consectetur venenatis, 
+            ante arcu lobortis dolor, condimentum semper odio orci nec mauris. Sed facilisis lacus odio, 
+            vitae cursus diam tincidunt eu. Nam elementum, lectus ut vestibulum congue, augue magna pretium nulla, 
+            id malesuada sapien nisi eu orci.
+        </p>
+        <div id="form-div">
+            <form id="survey-form">
+                <label id="name-label" for="name">Name:
+                    <input type="text" id="name" placeholder="Enter your name..." required>
                 </label>
-                <label for="option2">
-                    <input type="radio" name="radiofield" id="option2" value="option-name2">
+                <label id="email-label" for="email">Email:
+                    <input type="email" id="email" placeholder="Enter your email adress..." required>
                 </label>
-                <label for="option3">
-                    <input type="radio" name="radiofield" id="option3" value="option-name3">
+                <label id="number-label" for="number">Age:
+                    <input type="number" id="number" min="0" max="150" placeholder="Enter your age...">
                 </label>
-            </fieldset>
-            <fieldset>
-                <label for="option1">
-                    <input type="checkbox" name="radiofield2" id="option1" value="option-name1">
+                <fieldset id="radio-fieldset">
+                    <legend>What do you feel is the best way to tackle deforestation?</legend>
+                    <label for="option1">
+                        <input type="radio" name="radiofield" id="option1" value="option-name1">Reducing meat consumption
+                    </label>
+                    <label for="option2">
+                        <input type="radio" name="radiofield" id="option2" value="option-name2">Using pine or eucalyptus timber
+                    </label>
+                    <label for="option3">
+                        <input type="radio" name="radiofield" id="option3" value="option-name3">Using gas instead of firewood
+                    </label>
+                </fieldset>
+                <label id="select" for="dropdown">What do you think is the biggest threat towards rainforests?
+                    <select id="dropdown">
+                        <option value="option1">Deforestation</option>
+                        <option value="option1">Climate change</option>
+                        <option value="option1">Human settlements</option>
+                    </select>
                 </label>
-                <label for="option2">
-                    <input type="checkbox" name="radiofield2" id="option2" value="option-name2">
+                <fieldset id="checkbox-fieldset">
+                    <legend>Which topics are you interested in?</legend>
+                    <label for="option1">
+                        <input type="checkbox" name="radiofield2" id="option1" value="option-name1">Carbon footprints
+                    </label>
+                    <label for="option2">
+                        <input type="checkbox" name="radiofield2" id="option2" value="option-name2">Illegal logging
+                    </label>
+                    <label for="option3">
+                        <input type="checkbox" name="radiofield2" id="option3" value="option-name3">Land clearing
+                    </label>
+                </fieldset>
+                <label id="input-text" for="text">Share your thoughts with us:
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
                 </label>
-                <label for="option3">
-                    <input type="checkbox" name="radiofield2" id="option3" value="option-name3">
-                </label>
-            </fieldset>
-            <label for="text"><textarea name="text1" id="text1" cols="30" rows="10"></textarea></label>
-            <button type="submit" id="submit">Submit</button>
-        </form>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
